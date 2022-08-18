@@ -1,3 +1,4 @@
+import io.github.bonigarcia.wdm.WebDriverManager;
 import org.junit.jupiter.api.*;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -10,6 +11,7 @@ public class OrderTest {
     @BeforeAll
     static void setupAll() {
         System.setProperty("webdriver.chrome.driver", "D:/netology/seleniumi/dz1/selenium/driver/chromedriver.exe");
+        WebDriverManager.chromedriver().setup();
 
     }
 
